@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @macropost %>
+
+<div>
+  <%= link_to "Edit this macropost", edit_macropost_path(@macropost) %> |
+  <%= link_to "Back to macroposts", macroposts_path %>
+
+  <%= button_to "Destroy this macropost", @macropost, method: :delete %>
+</div>

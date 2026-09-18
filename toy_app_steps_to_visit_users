@@ -1,0 +1,16 @@
+2.22 Exercises
+
+1.  1. Browser issues a request to /profiles/:id/edit
+    2. Rails routes to edit method in profiles_controller.rb
+    3. rails renders the model
+    4. profiles model gets the profiles record from db with the corresponding id
+
+2. located at the bottom of the controller, it loads the profile by id before the controller initialized.
+
+
+3. edit.html.erb
+
+
+
+
+

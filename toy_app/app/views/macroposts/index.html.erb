@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Macroposts" %>
+
+<h1>Macroposts</h1>
+
+<div id="macroposts">
+  <% @macroposts.each do |macropost| %>
+    <%= render macropost %>
+    <p>
+      <%= link_to "Show this macropost", macropost %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New macropost", new_macropost_path %>

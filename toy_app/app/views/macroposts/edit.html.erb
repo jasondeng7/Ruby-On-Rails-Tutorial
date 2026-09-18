@@ -1,0 +1,12 @@
+<% content_for :title, "Editing macropost" %>
+
+<h1>Editing macropost</h1>
+
+<%= render "form", macropost: @macropost %>
+
+<br>
+
+<div>
+  <%= link_to "Show this macropost", @macropost %> |
+  <%= link_to "Back to macroposts", macroposts_path %>
+</div>

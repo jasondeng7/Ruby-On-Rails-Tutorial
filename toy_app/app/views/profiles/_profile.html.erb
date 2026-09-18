@@ -1,0 +1,21 @@
+<div id="<%= dom_id profile %>">
+  <p>
+    <strong>Name:</strong>
+    <%= profile.name %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= profile.email %>
+  </p>
+  <p>
+    <% if @macroposts != nil%>
+    <strong>Macroposts:</strong>
+      <%@macroposts.each do | macropost |%>
+      <%= render macropost%>
+        <% end %>
+    <% end %>
+    
+  </p>
+
+</div>

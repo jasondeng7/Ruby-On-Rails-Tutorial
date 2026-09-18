@@ -1,0 +1,27 @@
+<%= form_with(model: macropost) do |form| %>
+  <% if macropost.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(macropost.errors.count, "error") %> prohibited this macropost from being saved:</h2>
+
+      <ul>
+        <% macropost.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :content, style: "display: block" %>
+    <%= form.textarea :content %>
+  </div>
+
+  <div>
+    <%= form.label :profile_id, style: "display: block" %>
+    <%= form.number_field :profile_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
